@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sell Cards | WE LOVE CARDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sell Cards</h1>
+    <p>Earn from your collection</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="market.html">Market</a>
+        <a href="sell.html">Sell</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="sell">
+    <form class="sell-form">
+    <h2>List Your Card</h2>
+
+    <!-- TÊN CARD -->
+    <input type="text" placeholder="Card Name" required>
+
+    <!-- GIÁ 1 SẢN PHẨM -->
+    <label>Price (VNĐ / card)</label>
+    <input type="number" id="price" placeholder="Enter price" min="0" required>
+
+    <!-- SỐ LƯỢNG -->
+    <label>Quantity</label>
+    <input type="number" id="quantity" value="1" min="1" required>
+
+    <!-- TỔNG GIÁ -->
+    <label>Total Price (VNĐ)</label>
+    <input type="text" id="total" readonly>
+
+    <!-- UPLOAD ẢNH -->
+    <label>Card Image</label>
+    <input type="file" accept="image/*" required>
+
+    <select>
+        <option>Sell</option>
+        <option>Trade</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+<!-- JAVASCRIPT -->
+<script>
+    const priceInput = document.getElementById("price");
+    const quantityInput = document.getElementById("quantity");
+    const totalInput = document.getElementById("total");
+
+    function updateTotal() {
+        const price = Number(priceInput.value);
+        const quantity = Number(quantityInput.value);
+        totalInput.value = (price * quantity).toLocaleString("vi-VN") + " VNĐ";
+    }
+
+    priceInput.addEventListener("input", updateTotal);
+    quantityInput.addEventListener("input", updateTotal);
+</script>
+
+</section>
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+
+        <!-- CỘT 1 -->
+        <div class="footer-col">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <p><strong>CARDX COMPANY</strong></p>
+            <p>Thới An, Quận 12, TP.HCM</p>
+            <p>Tel: 0123456789</p>
+            <p>Email: cardx@gmail.com</p>
+            <p>Website: www.cardx.com</p>
+        </div>
+
+        <!-- CỘT 2 -->
+        <div class="footer-col">
+            <h3>CHÍNH SÁCH DỊCH VỤ</h3>
+            <ul>
+                <li>Hướng dẫn thanh toán</li>
+                <li>Chính sách bảo mật</li>
+                <li>Chính sách đổi trả</li>
+                <li>Hướng dẫn sử dụng</li>
+            </ul>
+        </div>
+    <div class="footer-bottom">
+        © 2026 CardX. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
