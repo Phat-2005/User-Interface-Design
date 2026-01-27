@@ -1,4 +1,5 @@
 Homepage (Landing Page)
+
 Purpose: This is the main introductory page of the WE LOVE CARDS website.
 Explanation:
 The top navigation bar includes:
@@ -16,6 +17,7 @@ The “Go to Marketplace” button is a call to action guiding users to start br
 <img width="1916" height="784" alt="Screenshot 2026-01-23 150901" src="https://github.com/user-attachments/assets/be856e6d-c4c4-43fe-ac38-464aa9dbde2f" />
 
 Market Page
+
 Purpose:This page is where users browse, buy, and trade cards.
 Explanation:
 The header displays “Exchange – Secure and Safe Trading,” emphasizing trust and security.
@@ -32,6 +34,7 @@ This page focuses on e-commerce functionality and user interaction.
 <img width="1915" height="879" alt="Screenshot 2026-01-23 150958" src="https://github.com/user-attachments/assets/4df5933c-6d81-4daa-b13d-9ca5bf750dfd" />
 
 Sell Cards Page
+
 Purpose: This page allows users to list their own cards for sale.
 Explanation: The title “Sell Cards – Earn from your collection” motivates users to sell.
 The form includes:
@@ -46,6 +49,7 @@ This page represents the seller side of the platform.
 <img width="1919" height="840" alt="Screenshot 2026-01-23 151008" src="https://github.com/user-attachments/assets/fbc78a50-3485-4757-b487-e2a1efca5e55" />
 
 Login Page
+
 Purpose:This page is used for user authentication and account access.
 Explanation:Clean and modern gradient background improves visual appeal.
 Centered login card improves focus and usability.
