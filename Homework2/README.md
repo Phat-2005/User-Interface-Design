@@ -62,4 +62,4 @@ Example:
 It also helps complete the layout of the website.
 <img width="1918" height="1018" alt="Screenshot 2026-03-07 080603" src="https://github.com/user-attachments/assets/ac85348e-2fe7-4520-8540-102f689bf850" />
 
-<img width="1918" height="1018" alt="Screenshot 2026-03-07 080603" src="https://github.com/user-attachments/assets/ecd34ecd-c4e1-496d-a557-3c170b11137c" />
+
