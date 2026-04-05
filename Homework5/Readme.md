@@ -14,6 +14,7 @@ The main concept includes:
 
 3. Style Guide
 A style guide was created to ensure consistency across all screens.
+
 3.1 Color Palette
 The following color scheme was applied:
 Primary Color: #FF6B35 (used for main actions such as buttons)
