@@ -1,4 +1,4 @@
-<img width="305" height="642" alt="Screenshot 2026-04-05 182801" src="https://github.com/user-attachments/assets/a3ddb094-c0c0-4e79-b98a-2d7f4a30e391" />Food Delivery Mobile App
+Food Delivery Mobile App
 
 1. Introduction
 This project presents the design of a mobile application prototype for a food delivery service named Fatfood. The goal of the project is to create a visually appealing and user-friendly interface using modern UI/UX design principles.
