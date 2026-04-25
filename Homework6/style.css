@@ -1,0 +1,90 @@
+/* BODY */
+body {
+  margin: 0;
+  background: #f8f8f8; /* ❌ bỏ nền đen */
+}
+
+/* BỎ KHUNG APP LUÔN */
+.app {
+  display: block;
+}
+
+/* CONTAINER FULL */
+.container {
+  max-width: 1200px;   /* ✅ rộng ra */
+  margin: auto;
+  padding: 20px;
+  background: transparent; /* bỏ nền riêng */
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SEARCH */
+.search-box {
+  border-radius: 10px;
+  background: #eee;
+  border: none;
+}
+
+/* CATEGORY */
+.category {
+  display: flex;
+  gap: 10px;
+}
+
+.category button {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background: #48c1b5;
+  color: white;
+}
+
+.category .active {
+  background: #ff6b35;
+}
+
+/* CARD */
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.card-img-top {
+  height: 160px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.card-body {
+  background: white;
+  border-radius: 0 0 15px 15px;
+}
+
+/* PRICE */
+.price {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.btn-main {
+  background: #ff6b35;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* REMOVE LINK */
+a {
+  text-decoration: none !important;
+  color: black !important;
+}

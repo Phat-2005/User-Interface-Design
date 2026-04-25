@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Food App</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="container py-3">
+
+    <!-- HEADER -->
+    <div class="header mb-3">
+      <h4>Hi, Phát 👋</h4>
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" width="40">
+    </div>
+
+    <!-- SEARCH -->
+    <input class="form-control search-box mb-3" placeholder="🔍 Search food">
+
+    <!-- CATEGORY -->
+    <div class="category mb-3">
+      <button class="active" onclick="showSection('pizza', this)">Pizza</button>
+      <button onclick="showSection('burger', this)">Burger</button>
+      <button onclick="showSection('spaghetti', this)">Spaghetti</button>
+      <button onclick="showSection('drink', this)">Drink</button>
+    </div>
+
+    <!-- 🍕 PIZZA -->
+<div id="pizza-section">
+  <div class="row g-3">
+
+    <!-- 1 -->
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Pizza Shrimp&price=250000&img=https://cdn.phototourl.com/free/2026-04-22-81015d78-e5eb-40dd-bb6a-c10265b80480.png">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-22-81015d78-e5eb-40dd-bb6a-c10265b80480.png" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Pizza Shrimp</h6>
+            <p class="price">250.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Pizza Sausage&price=230000&img=https://cdn.phototourl.com/free/2026-04-22-8562e158-c6c9-4632-9d70-8c49c1434213.png">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-22-8562e158-c6c9-4632-9d70-8c49c1434213.png" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Pizza Sausage</h6>
+            <p class="price">230.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Pizza Vegetarian&price=270000&img=https://cdn.phototourl.com/free/2026-04-22-000b1f45-55c8-4fc4-9367-648dec51a4a4.png">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-22-000b1f45-55c8-4fc4-9367-648dec51a4a4.png" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Pizza Vegetarian</h6>
+            <p class="price">270.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Pizza Chicken&price=260000&img=https://cdn.phototourl.com/free/2026-04-22-b240bdf8-685f-4f25-804c-f70cdd8b3ec1.png">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-22-b240bdf8-685f-4f25-804c-f70cdd8b3ec1.png" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Pizza Chicken</h6>
+            <p class="price">260.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 5 -->
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Pizza Beef&price=290000&img=https://cdn.phototourl.com/free/2026-04-22-0808f1c8-b05f-49cd-a308-fd9a012ca4cb.png">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-22-0808f1c8-b05f-49cd-a308-fd9a012ca4cb.png" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Pizza Beef</h6>
+            <p class="price">290.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 6 -->
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Pizza Hawaii&price=300000&img=https://cdn.phototourl.com/free/2026-04-22-2b03a678-aad1-412e-98c1-8628f89026f1.png">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-22-2b03a678-aad1-412e-98c1-8628f89026f1.png" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Pizza Hawaii</h6>
+            <p class="price">300.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+    <!-- 🍔 BURGER -->
+    <div id="burger-section" style="display:none;">
+      <div class="row g-3">
+
+        <div class="col-6 col-md-4">
+  <a href="detail.html?name=Beef Burger&price=120000&img=https://cdn.phototourl.com/free/2026-04-24-6c40ccf1-cfb7-4159-9d2b-8091eb46b956.webp">
+    <div class="card">
+      <img src="https://cdn.phototourl.com/free/2026-04-24-6c40ccf1-cfb7-4159-9d2b-8091eb46b956.webp" class="card-img-top">
+      <div class="card-body text-center">
+        <h6>Beef Burger</h6>
+        <p class="price">120.000 VND</p>
+        <button class="btn btn-main">Add to Cart</button>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="col-6 col-md-4">
+  <a href="detail.html?name=Shrimp Burger&price=130000&img=https://cdn.phototourl.com/free/2026-04-24-bf344475-349e-4a30-af98-85dc36839b18.webp">
+    <div class="card">
+      <img src="https://cdn.phototourl.com/free/2026-04-24-bf344475-349e-4a30-af98-85dc36839b18.webp" class="card-img-top">
+      <div class="card-body text-center">
+        <h6>Shrimp Burger</h6>
+        <p class="price">130.000 VND</p>
+        <button class="btn btn-main">Add to Cart</button>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="col-6 col-md-4">
+  <a href="detail.html?name=Chicken Burger&price=110000&img=https://cdn.phototourl.com/free/2026-04-24-0080dac1-ba84-45b0-8172-46373a469d0c.jpg">
+    <div class="card">
+      <img src="https://cdn.phototourl.com/free/2026-04-24-0080dac1-ba84-45b0-8172-46373a469d0c.jpg" class="card-img-top">
+      <div class="card-body text-center">
+        <h6>Chicken Burger</h6>
+        <p class="price">110.000 VND</p>
+        <button class="btn btn-main">Add to Cart</button>
+      </div>
+    </div>
+  </a>
+</div>
+
+</div>
+</div>
+      <!-- 🍝 SPAGHETTI -->
+<div id="spaghetti-section" style="display:none;">
+  <div class="row g-3">
+
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Spaghetti&price=79000&img=https://cdn.phototourl.com/free/2026-04-24-1c784c05-359c-450e-9479-a0a151c7aec2.jpg">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-24-1c784c05-359c-450e-9479-a0a151c7aec2.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Spaghetti</h6>
+            <p class="price">79.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- 🥤 DRINK -->
+<div id="drink-section" style="display:none;">
+  <div class="row g-3">
+
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Coca Cola&price=20000&img=https://cdn.phototourl.com/free/2026-04-24-2529c949-d275-460e-8bfc-cc49dc1fac6f.jpg">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-24-2529c949-d275-460e-8bfc-cc49dc1fac6f.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Coca Cola</h6>
+            <p class="price">20.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Pepsi&price=20000&img=https://cdn.phototourl.com/free/2026-04-24-69cf88ea-3cfc-44db-ba67-0d982fc92353.jpg">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-24-69cf88ea-3cfc-44db-ba67-0d982fc92353.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Pepsi</h6>
+            <p class="price">20.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Aquafina -->
+    <div class="col-6 col-md-4">
+      <a href="detail.html?name=Aquafina&price=20000&img=https://cdn.phototourl.com/free/2026-04-24-7a7128aa-2fe0-478d-8f16-df445c33d867.jpg">
+        <div class="card">
+          <img src="https://cdn.phototourl.com/free/2026-04-24-7a7128aa-2fe0-478d-8f16-df445c33d867.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Aquafina</h6>
+            <p class="price">20.000 VND</p>
+            <button class="btn btn-main">Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<script>
+function showSection(section, el) {
+  document.querySelectorAll("[id$='-section']").forEach(s => s.style.display = "none");
+  document.getElementById(section + "-section").style.display = "block";
+
+  document.querySelectorAll(".category button").forEach(btn => btn.classList.remove("active"));
+  el.classList.add("active");
+}
+</script>
+
+</body>
+</html>

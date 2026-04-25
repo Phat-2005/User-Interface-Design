@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Food Detail</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+  <div class="container py-3">
+
+    <!-- HEADER -->
+    <div class="header mb-3">
+      <h4>Food Detail 🍕</h4>
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" width="40">
+    </div>
+
+    <!-- BACK -->
+    <a href="index.html" class="btn btn-light mb-3">⬅ Back</a>
+
+    <!-- IMAGE -->
+    <img id="food-img" class="img-fluid rounded mb-3">
+
+    <!-- NAME -->
+    <h3 id="food-name"></h3>
+
+    <!-- PRICE -->
+    <p id="food-price" class="price"></p>
+
+    <!-- DESCRIPTION -->
+    <h6>Description</h6>
+    <p id="food-desc" class="text-muted"></p>
+
+    <!-- BUTTON -->
+    <button class="btn btn-main w-100 mt-3">Add to Cart</button>
+
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+const name = params.get("name");
+const price = params.get("price");
+const img = params.get("img");
+
+// NAME
+document.getElementById("food-name").innerText = name || "Food";
+
+// PRICE
+document.getElementById("food-price").innerText =
+  (price ? Number(price).toLocaleString() : "0") + " VND";
+
+// IMAGE
+document.getElementById("food-img").src =
+  img || "https://via.placeholder.com/300";
+
+// ✅ DESCRIPTION THEO LOẠI
+let desc = "";
+
+if (name && name.toLowerCase().includes("pizza")) {
+  desc = "Delicious pizza with crispy crust, rich cheese and fresh toppings.";
+}
+else if (name && name.toLowerCase().includes("burger")) {
+  desc = "Juicy burger with grilled meat, fresh veggies and soft bun.";
+}
+else if (name && name.toLowerCase().includes("spaghetti")) {
+  desc = "Classic spaghetti with rich sauce and savory flavor.";
+}
+else if (
+  name && (
+    name.toLowerCase().includes("coca") ||
+    name.toLowerCase().includes("pepsi") ||
+    name.toLowerCase().includes("aquafina")
+  )
+) {
+  desc = "Refreshing drink to keep you cool and energized.";
+}
+else {
+  desc = "Tasty food made with high quality ingredients.";
+}
+
+// GÁN DESCRIPTION
+document.getElementById("food-desc").innerText = desc;
+
+</script>
+
+</body>
+</html>
