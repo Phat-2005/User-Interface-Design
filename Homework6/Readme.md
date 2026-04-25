@@ -55,7 +55,7 @@ Mobile: 2 items per row
 <img width="1919" height="915" alt="Screenshot 2026-04-25 184936" src="https://github.com/user-attachments/assets/77850bcc-b899-4567-976d-025c65ac626a" />
 
 
-Detail Page
+4. Detail Page
 This page displays detailed information about a selected food item.
 Functionality:
 Data is passed via URL parameters
