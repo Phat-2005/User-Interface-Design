@@ -1,4 +1,3 @@
-<img width="1916" height="952" alt="Screenshot 2026-04-25 184926" src="https://github.com/user-attachments/assets/a9dbd267-2efa-4511-a703-7b6c281f5be5" />1. Welcome Page
 The Welcome page is the first screen users see when accessing the website.
 The layout is centered and minimal, focusing on the logo and the application name FATFOOD.
 The main color used is orange (#ff6600), which creates a vibrant and food-related visual identity.
